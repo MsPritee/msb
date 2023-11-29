@@ -1,0 +1,113 @@
+.banner-card {
+    height: 90vh;
+    /* background-color: blue; */
+    overflow: hidden;
+    position: relative;
+    /* border: solid chocolate 3px; */
+
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.banner-img {
+    width: 100%;
+    z-index: 0;
+    height: auto;
+    display: block;
+    top: 0;
+    position: relative;
+    /* border: solid chartreuse 3px; */
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+.duster {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition: all 05s ease-in-out;
+    z-index: 2;
+    width: 13%;
+   
+}
+
+.initial {
+    transform: translate(0, 0) ;
+}
+
+.move-to-top-left {
+    transform: translate(-600%, -200%)  ;
+}
+
+.move-horizontally {
+    transform: translate(-100%, -200%) ;
+}
+
+.return-to-initial {
+    transform: translate(0, 0) ;
+}
+
+
+.typing-container {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    width: 100%;
+    /* border: solid chocolate 3px; */
+}
+
+.typing-sentence {
+    background-color: transparent;
+    font-size: 42px;
+    font-weight: bold;
+    z-index: 1;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    padding-right: 5px;
+}
+
+@keyframes removeText {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+.animate-out {   
+
+    animation: removeText 5s ease-out forwards;
+}
+

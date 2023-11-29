@@ -1,0 +1,10 @@
+
+StickyHeader{
+    z-index: 3;
+    background-color: transparent;
+    position: sticky;
+}
+
+Banner{
+    z-index: 0;
+}
