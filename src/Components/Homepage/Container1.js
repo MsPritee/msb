@@ -29,7 +29,7 @@ export default function Container1() {
             </div>
             <div className='btn-box items-center justify-center mb-5'>
               <div className='yt-btn btn '>
-                <Link to='/notes' target='_blank'>ClickMe</Link>
+                <Link to='/notes' >ClickMe</Link>
               </div>
             </div>
           </div>
